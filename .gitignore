@@ -1,2 +1,6 @@
-# Ignore Library folder for upload
-/Library
+# Ignore Library files for upload
+/Library/ArtifactDB
+/Library/Artifacts
+/Library/Bee
+/Library/PackageCache
+/Library/PackageManager
