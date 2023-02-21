@@ -1,6 +1,3 @@
+# .gitignore for SP23-Immersive-Motivation
 # Ignore Library files for upload
-/Library/ArtifactDB
-/Library/Artifacts
-/Library/Bee
-/Library/PackageCache
-/Library/PackageManager
+Library
