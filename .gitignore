@@ -1,0 +1,8 @@
+# .gitignore for SP23-Immersive-Motivation
+# Ignore Library files for upload
+Library
+*.opendb
+*.VC.db
+*.apk
+*.unitypackage
+ArtifactDB
