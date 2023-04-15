@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638165751392176541
-    m_Hash: 3030537418
+      ticks: 638171798946229040
+    m_Hash: 1419571563
   m_LockFileStatus:
     m_FilePath: C:/Users/izaug/OneDrive/Desktop/HCI/Final Project/SP23-Immersive-Motivation/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638165751419562340
-    m_Hash: 1336893788
+      ticks: 638171798946239025
+    m_Hash: 4004298178
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3377,6 +3377,7 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.2.1
     - 1.2.2
+    - 1.2.3
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3391,6 +3392,7 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.2.1
     - 1.2.2
+    - 1.2.3
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
