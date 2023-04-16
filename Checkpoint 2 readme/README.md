@@ -11,9 +11,9 @@ Melissa Clemens: Worked on proposal and checkpoint writing. Worked on LaTeX form
 Future distribution of work:
 
 Caitlin 25% – Work on fully finishing the prototype. Advertise the experiment to others a get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
-Irene 25% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
-Sophia 25% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
-Melissa 25% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Irene 24% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Sophia 28% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Melissa 23% - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
 
 When we have met and how frequent:
 
