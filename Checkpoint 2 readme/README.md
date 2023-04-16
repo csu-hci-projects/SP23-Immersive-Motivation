@@ -1,4 +1,4 @@
-Video Link: 
+Video Link: https://youtu.be/iu6BugW7Wn4 
 Overleaf Paper Link: https://www.overleaf.com/8143655299fzfdgzkgztnk 
 
 What Each Member has done thus far:
