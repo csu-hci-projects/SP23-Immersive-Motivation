@@ -10,10 +10,10 @@ Melissa Clemens: Worked on proposal and checkpoint writing. Worked on LaTeX form
 
 Future distribution of work:
 
-Caitlin – Work on fully finishing the prototype. Advertise the experiment to others a get participants, Run the experiment with participants, Work on Final Paper
-Irene - Advertise the experiment to others to get participants, Run the experiment with participants, Work on Final Paper
-Sophia - Advertise the experiment to others to get participants, Run the experiment with participants, Work on Final Paper
-Melissa - Advertise the experiment to others to get participants, Run the experiment with participants, Work on Final Paper
+Caitlin – Work on fully finishing the prototype. Advertise the experiment to others a get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Irene - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Sophia - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
+Melissa - Advertise the experiment to others to get participants, Run the experiment with participants, Find more Sources for Paper, Finish Final Paper
 
 When we have met and how frequent:
 
