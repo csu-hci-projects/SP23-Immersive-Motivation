@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class UIMouse : MonoBehaviour
 {
-    public GameObject surveyCanvas;
-    public GameObject playerCam;
-    public GameObject staticCam;
+    private GameObject surveyCanvas;
+    private GameObject playerCam;
+    private GameObject staticCam;
+    private GameObject player;
 
+    public GameObject nextWindow;
+
+    void Start()
+    {
+        surveyCanvas = this.gameObject;
+        playerCam = GameObject.Find("PlayerCam");
+        staticCam = GameObject.Find("StaticCam");
+        player = GameObject.Find("Player");
+    }
     void Update()
     {
         if (surveyCanvas.activeInHierarchy)
         {
+            nextWindow.SetActive(false);
             setActive();
         }
     }
@@ -20,6 +31,7 @@ public class UIMouse : MonoBehaviour
     {
         playerCam.SetActive(false);
         staticCam.SetActive(true);
+        player.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
@@ -28,7 +40,10 @@ public class UIMouse : MonoBehaviour
     {
         playerCam.SetActive(true);
         staticCam.SetActive(false);
+        player.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
+        nextWindow.SetActive(true);
+        surveyCanvas.SetActive(false);
     }
 }
