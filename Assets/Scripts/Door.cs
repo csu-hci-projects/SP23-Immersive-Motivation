@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public Cauldron cauldron;
+    public GameObject cauldron;
     public bool isUnlocked = false;
     public bool isOpen = false;
     public Animator anim;
@@ -24,7 +24,7 @@ public class Door : MonoBehaviour
     void onClick() {
         if(isUnlocked) {
             isOpen = true;
-            
+            anim.SetBool("isOpened", true);
         }
         // else do nothing
     }

@@ -160,6 +160,20 @@ CapsuleCollider:
   m_Height: 0.04589278
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0.01810523}
+--- !u!114 &6711003823707321431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005588449189828355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e203a579948444d0a7aed3bf6ec2453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cauldron: {fileID: 0}
+  door1: {fileID: 0}
 --- !u!1 &2652192039025933064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8617835151230357669, guid: 84cc78c3af290c147b616237a5b6b20c, type: 3}
@@ -232,6 +246,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.025823897}
   m_Center: {x: 0, y: 0, z: 0.012848646}
+--- !u!95 &4549604037005583682
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854519953805900096}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6654610925149560185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8138245790736927020, guid: 84cc78c3af290c147b616237a5b6b20c, type: 3}
