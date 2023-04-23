@@ -23,11 +23,11 @@ public class TimeTracker : MonoBehaviour {
  //referenced https://support.unity.com/hc/en-us/articles/115000341143-How-do-I-read-and-write-data-from-a-text-file-
     public void ExportTimeData(){
       StreamWriter writer = new StreamWriter(path, true);
-      for each long t in CheckpointTimes{
+      foreach (long t in CheckpointTimes){
         string path = "Assets/CheckpointTimes.txt";
         //Write some text to the test.txt file
         
-        writer.WriteLine("\nTime: ",TimeTracker.CheckpointTimes[i++]);
+        writer.WriteLine("\nTime: ",t);
         
       }
      writer.Close();
