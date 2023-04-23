@@ -13,7 +13,12 @@ public class TimeTracker : MonoBehaviour {
     void Update () {
         TimeCnt += Time.deltaTime;
         if(Checkpoint == true){
-          CheckpointTimes[i++] = TimeCnt;
+          if(i==0){
+           CheckpointTimes[i++] = Time.unscaledTime;
+          }
+         else{
+           CheckpointTimes[i++] = Time.unscaledTime - CheckpointTimes[i-1];
+         }
           Checkpoint = false;
         }
  
