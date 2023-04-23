@@ -20,6 +20,7 @@ public class TimeTracker : MonoBehaviour {
            CheckpointTimes[i++] = Time.unscaledTime - CheckpointTimes[i-1];
        }
     }
+ //referenced https://support.unity.com/hc/en-us/articles/115000341143-How-do-I-read-and-write-data-from-a-text-file-
     public void ExportTimeData(){
       StreamWriter writer = new StreamWriter(path, true);
       for each long t in CheckpointTimes{
