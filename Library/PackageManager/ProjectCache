@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638177145271078567
-    m_Hash: 1055028329
+      ticks: 638177185349122645
+    m_Hash: 4217203285
   m_LockFileStatus:
     m_FilePath: C:/Users/izaug/OneDrive/Desktop/HCI/Final Project/SP23-Immersive-Motivation/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638177145271655834
-    m_Hash: 4036699855
+      ticks: 638177185349141238
+    m_Hash: 1490957071
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
