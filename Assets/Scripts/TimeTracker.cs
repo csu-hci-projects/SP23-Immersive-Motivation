@@ -33,7 +33,7 @@ public class TimeTracker : MonoBehaviour {
      writer.Close();
         //Re-import the file to update the reference in the editor
      AssetDatabase.ImportAsset(path); 
-     TextAsset asset = Resources.Load("test");
+     TextAsset asset = Resources.Load("CheckpointTimes");
         //Print the text from the file
      Debug.Log(asset.text);
     }
