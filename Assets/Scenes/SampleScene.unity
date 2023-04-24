@@ -248,14 +248,7 @@ Transform:
   - {fileID: 259896028}
   - {fileID: 2146136738}
   - {fileID: 2134760714}
-  - {fileID: 407114951}
-  - {fileID: 1855293008}
-  - {fileID: 2129448972}
-  - {fileID: 903394856}
-  - {fileID: 1212205333}
-  - {fileID: 1755443097}
-  - {fileID: 837991301}
-  - {fileID: 1820771865}
+  - {fileID: 1084608767}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1036,7 +1029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 919132149155446097, guid: 01f3eb2116e0e6c46a1a746df992c01a, type: 3}
-  cauldronLight: {fileID: 348619245}
   door1: {fileID: 295886334}
   door2: {fileID: 984555281}
   door3: {fileID: 1487312302}
@@ -1195,14 +1187,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259896027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 297805978}
 --- !u!1 &270298192
 GameObject:
@@ -1419,9 +1410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 733703134}
 --- !u!143 &295886335
 CharacterController:
@@ -2313,12 +2303,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407114949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.13, y: -1.6174545, z: 25}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: -32.263046, y: -1.92348, z: 29.73005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 18
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439651303
 GameObject:
@@ -3469,12 +3459,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837991299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.43, y: -1.6174545, z: -25.84}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: -28.8, y: -1.9, z: -32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 24
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903394854
 GameObject:
@@ -3563,12 +3553,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903394854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.68, y: -1.6174545, z: 0}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: 43.3, y: -1.9, z: 3.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 21
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911290201
 GameObject:
@@ -4219,14 +4209,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984555278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 559392822}
 --- !u!1 &1005523713
 GameObject:
@@ -4546,6 +4535,45 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1084608766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1084608767}
+  m_Layer: 0
+  m_Name: Door Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084608767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084608766}
+  m_LocalRotation: {x: 7.8118984e-10, y: -0.9122062, z: -0.000000109087615, w: 0.40973157}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 407114951}
+  - {fileID: 1855293008}
+  - {fileID: 2129448972}
+  - {fileID: 903394856}
+  - {fileID: 1212205333}
+  - {fileID: 1755443097}
+  - {fileID: 837991301}
+  - {fileID: 1820771865}
+  m_Father: {fileID: 72421353}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: -131.624, z: 0}
 --- !u!1 &1104127137
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,12 +5415,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212205331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.9, y: -1.6174545, z: -26.099998}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: 32.2, y: -1.9, z: -29.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 22
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217212301
 GameObject:
@@ -6540,14 +6568,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487312299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 1839424667}
 --- !u!1 &1503507036
 GameObject:
@@ -7807,12 +7834,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755443095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -1.6174545, z: -36.81}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: 3.8, y: -1.9, z: -43.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 23
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1765973171
 PrefabInstance:
@@ -8155,12 +8182,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820771863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.4, y: -1.6174545, z: -0.29999906}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: -43.8, y: -1.9, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 25
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1828508410
 GameObject:
@@ -8252,14 +8279,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832440788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 1978729347}
 --- !u!1 &1833285888
 GameObject:
@@ -8554,12 +8580,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855293006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -1.6174545, z: 36.99}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: -1.8, y: -1.9, z: 43.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 19
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1892323252
 PrefabInstance:
@@ -9103,6 +9129,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &1993059617 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 1225979741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2034184099
 GameObject:
   m_ObjectHideFlags: 0
@@ -9299,14 +9330,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096930543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 1484501048}
 --- !u!1 &2121460523
 GameObject:
@@ -9433,12 +9463,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129448970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.16, y: -1.6174545, z: 26.7}
-  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_LocalPosition: {x: 28.9, y: -1.9, z: 32.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72421353}
-  m_RootOrder: 20
+  m_Father: {fileID: 1084608767}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134760713
 GameObject:
@@ -9481,14 +9511,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134760713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 1435318306}
 --- !u!143 &2134760716
 CharacterController:
@@ -9567,12 +9596,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146136737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cauldron: {fileID: 239526676}
-  isUnlocked: 0
-  isOpen: 0
+  cauldron: {fileID: 239526677}
+  playerController: {fileID: 1993059617}
   anim: {fileID: 1526592016}
