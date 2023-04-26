@@ -7,11 +7,11 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public Cauldron cauldron;
-    public CharacterController playerController;
+    //public CharacterController playerController;
     private bool isUnlocked = false;
     private bool isOpen = false;
     public Animator anim;
-    public static float minDistance = 5.5f;
+    //public static float minDistance = 5.5f;
     void Start(){
         anim.SetBool("isOpened", false);
     }
@@ -21,31 +21,31 @@ public class Door : MonoBehaviour
     {
         print("isOpen = " + isOpen);
         print("isUnlocked = " + isUnlocked);
-        print("Player Distance: " + getPlayerDistance());
-        print("Within proximity: " + (getPlayerDistance() <= minDistance));
-        if(isOpen) {
+       // print("Player Distance: " + getPlayerDistance());
+       // print("Within proximity: " + (getPlayerDistance() <= minDistance));
+        /*if(isOpen) {
             anim.SetBool("isOpened", true);
         }
         else if(isUnlocked && getPlayerDistance() <= minDistance) {
             isOpen = true;
             anim.SetBool("isOpened", true);
-        }
+        }*/
         
         // else do nothing
     }
 
-    /*void onClick() {
+    void onClick() {
         if(isUnlocked) {
             isOpen = true;
             anim.SetBool("isOpened", true);
         }
         // else do nothing
-    }*/
+    }
 
-    private float getPlayerDistance() {
+    /*private float getPlayerDistance() {
         Vector3 offset = transform.position - playerController.transform.position;
         return (float)(Math.Sqrt(Math.Pow(offset.x, 2) + Math.Pow(offset.y, 2) + Math.Pow(offset.z, 2)));
-    }
+    }*/
     
     public void unlock() {
         isUnlocked = true;
