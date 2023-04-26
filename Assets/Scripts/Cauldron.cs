@@ -32,38 +32,31 @@ public class Cauldron : MonoBehaviour
         else if(door7.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(178, 114, 152, 255);
             door8.unlock();
-            CheckpointReached();
         }
         else if(door6.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(199, 100, 38, 255);
             door7.unlock();
-            CheckpointReached();
         }
         else if(door5.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(46, 114, 173, 255);
             door6.unlock();
-            CheckpointReached();
         }
         else if(door4.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(238, 227, 97, 255);
             door5.unlock();
-            CheckpointReached();
         }
         
         else if(door3.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(69, 155, 118, 255);
             door4.unlock();
-            CheckpointReached();
         }
         else if(door2.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(92, 151, 193, 255);
             door3.unlock();
-            CheckpointReached();
         }
         else if(door1.open()) {
             cauldron.GetComponent<Renderer>().material.color = new Color(218, 159, 55, 255);
             door2.unlock();
-            CheckpointReached();
         }
     }
 }
