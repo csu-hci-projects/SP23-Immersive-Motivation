@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cauldron : MonoBehaviour
 {
     public Cauldron cauldron;
+    public GameObject fluid;
     //public Light cauldronLight;
     public Door door1;
     public Door door2;
@@ -20,7 +21,7 @@ public class Cauldron : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cauldron.GetComponent<Renderer>().material.color = new Color(153, 153, 153, 255);
+        fluid.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, 1f);
         door1.unlock();
     }
 
@@ -36,7 +37,7 @@ public class Cauldron : MonoBehaviour
             // Open Completion UI
         }
         else if(door7.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(178, 114, 152, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(1f, 0.6847826f, 0.8804347f, 1f);
             door8.unlock();
             if(count < 7){
                 count++;
@@ -44,7 +45,7 @@ public class Cauldron : MonoBehaviour
             }
         }
         else if(door6.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(199, 100, 38, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(1f, 0.5263158f, 0.2315789f, 1f);
             door7.unlock();
             if(count < 6){
                 count++;
@@ -52,7 +53,7 @@ public class Cauldron : MonoBehaviour
             }
         }
         else if(door5.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(46, 114, 173, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(0.3333333f, 0.6547619f, 1f, 1f);
             door6.unlock();
             if(count < 5){
                 count++;
@@ -60,7 +61,7 @@ public class Cauldron : MonoBehaviour
             }
         }
         else if(door4.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(238, 227, 97, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(1f, 0.942623f, 0.4672132f, 1f);
             door5.unlock();
             if(count < 4){
                 count++;
@@ -69,7 +70,7 @@ public class Cauldron : MonoBehaviour
         }
         
         else if(door3.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(69, 155, 118, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(0.5657895f, 1f, 0.7631579f, 1f);
             door4.unlock();
             if(count < 3){
                 count++;
@@ -77,7 +78,7 @@ public class Cauldron : MonoBehaviour
             }
         }
         else if(door2.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(92, 151, 193, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(0.5309f, 0.7964602f, 1f, 1f);
             door3.unlock();
             if(count < 2){
                 count++;
@@ -85,7 +86,7 @@ public class Cauldron : MonoBehaviour
             }
         }
         else if(door1.open()) {
-            cauldron.GetComponent<Renderer>().material.color = new Color(218, 159, 55, 255);
+            fluid.GetComponent<Renderer>().material.color = new Color(1f, 0.7592593f, 0.3240741f, 1f);
             door2.unlock();
             if(count < 1){
                 count++;
