@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
     private bool isUnlocked = false;
     private bool isOpen = false;
     public Animator anim;
-    public static float minDistance = 5.5f;
+    public static float minDistance = 10.5f;
     void Start(){
         anim.SetBool("isOpened", false);
     }
@@ -19,7 +19,7 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        //*
         print("isOpen = " + isOpen);
         print("isUnlocked = " + isUnlocked);
         print("Player Distance: " + getPlayerDistance());
@@ -36,8 +36,10 @@ public class Door : MonoBehaviour
         // else do nothing
     }
 
-    //*
+    /*
     void onClick() {
+        print("isUnlocked = " + isUnlocked);
+
         if(isUnlocked) {
             isOpen = true;
             anim.SetBool("isOpened", true);

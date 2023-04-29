@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571346, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1182,6 +1182,7 @@ GameObject:
   - component: {fileID: 259896028}
   - component: {fileID: 259896029}
   - component: {fileID: 259896030}
+  - component: {fileID: 259896031}
   m_Layer: 0
   m_Name: Door6_Controller
   m_TagString: Untagged
@@ -1231,14 +1232,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259896027}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 297805978}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 259896031}
+--- !u!95 &259896031
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259896027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &267898392 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6531578303558919645, guid: 01f3eb2116e0e6c46a1a746df992c01a, type: 3}
@@ -1424,6 +1445,7 @@ GameObject:
   - component: {fileID: 295886333}
   - component: {fileID: 295886335}
   - component: {fileID: 295886334}
+  - component: {fileID: 295886336}
   m_Layer: 0
   m_Name: Door1_Controller
   m_TagString: Untagged
@@ -1461,8 +1483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 733703134}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 295886336}
 --- !u!143 &295886335
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1481,6 +1503,26 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &295886336
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295886332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &297805971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2985,26 +3027,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: d4b0aae24e53a42a8bcd7ce37f34a88a, type: 3}
---- !u!95 &559392822
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516897015}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &574125471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,26 +3579,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: d4b0aae24e53a42a8bcd7ce37f34a88a, type: 3}
---- !u!95 &733703134
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733703128}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &750405868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4499,6 +4501,7 @@ GameObject:
   - component: {fileID: 984555279}
   - component: {fileID: 984555280}
   - component: {fileID: 984555281}
+  - component: {fileID: 984555282}
   m_Layer: 0
   m_Name: Door2_Controller
   m_TagString: Untagged
@@ -4548,14 +4551,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984555278}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 559392822}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 984555282}
+--- !u!95 &984555282
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984555278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1005523713
 GameObject:
   m_ObjectHideFlags: 0
@@ -6725,6 +6748,7 @@ GameObject:
   - component: {fileID: 1487312300}
   - component: {fileID: 1487312301}
   - component: {fileID: 1487312302}
+  - component: {fileID: 1487312303}
   m_Layer: 0
   m_Name: Door3_Controller
   m_TagString: Untagged
@@ -6774,14 +6798,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487312299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 1839424667}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 1487312303}
+--- !u!95 &1487312303
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487312299}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1503507036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,9 +7230,10 @@ GameObject:
   - component: {fileID: 1682389833}
   - component: {fileID: 1682389832}
   - component: {fileID: 1682389834}
+  - component: {fileID: 1682389835}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7247,6 +7292,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   orientation: {fileID: 750405869}
+--- !u!143 &1682389835
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682389831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1694438555
 GameObject:
   m_ObjectHideFlags: 0
@@ -8438,6 +8501,7 @@ GameObject:
   - component: {fileID: 1832440789}
   - component: {fileID: 1832440790}
   - component: {fileID: 1832440791}
+  - component: {fileID: 1832440792}
   m_Layer: 0
   m_Name: Door5_Controller
   m_TagString: Untagged
@@ -8487,14 +8551,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832440788}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 1978729347}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 1832440792}
+--- !u!95 &1832440792
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832440788}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1833285888
 GameObject:
   m_ObjectHideFlags: 0
@@ -9428,6 +9512,7 @@ GameObject:
   - component: {fileID: 2096930544}
   - component: {fileID: 2096930545}
   - component: {fileID: 2096930546}
+  - component: {fileID: 2096930547}
   m_Layer: 0
   m_Name: Door4_Controller
   m_TagString: Untagged
@@ -9477,14 +9562,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096930543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 1484501048}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 2096930547}
+--- !u!95 &2096930547
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096930543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2121460523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9628,6 +9733,7 @@ GameObject:
   - component: {fileID: 2134760714}
   - component: {fileID: 2134760716}
   - component: {fileID: 2134760715}
+  - component: {fileID: 2134760717}
   m_Layer: 0
   m_Name: Door8_Controller
   m_TagString: Untagged
@@ -9659,14 +9765,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134760713}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 1435318306}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 2134760717}
 --- !u!143 &2134760716
 CharacterController:
   m_ObjectHideFlags: 0
@@ -9685,6 +9791,26 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2134760717
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134760713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2146136737
 GameObject:
   m_ObjectHideFlags: 0
@@ -9696,6 +9822,7 @@ GameObject:
   - component: {fileID: 2146136738}
   - component: {fileID: 2146136739}
   - component: {fileID: 2146136740}
+  - component: {fileID: 2146136741}
   m_Layer: 0
   m_Name: Door7_Controller
   m_TagString: Untagged
@@ -9745,11 +9872,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146136737}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55858adfd079b4aaca14059694ef2412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 239526677}
-  playerController: {fileID: 0}
-  anim: {fileID: 1526592016}
+  playerController: {fileID: 1682389835}
+  anim: {fileID: 2146136741}
+--- !u!95 &2146136741
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146136737}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8822010599ebe4bb48d5616b6247f598, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

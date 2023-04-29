@@ -4,12 +4,11 @@ using System.IO;
  
 public class TimeTracker : MonoBehaviour {
  
-    public static List <float> CheckpointTimes;
+    public static List <float> CheckpointTimes= new List <float>();
     public static float TimeCnt;
     private int i;
 
     void Start(){
-        CheckpointTimes = new List <float>();
         TimeCnt = 0;
         i = 0;
     }
@@ -20,11 +19,12 @@ public class TimeTracker : MonoBehaviour {
     }
     public void ReachedCheckpoint(){
        if(i==0){
-           CheckpointTimes[i++] = Time.unscaledTime;
+           CheckpointTimes.Add(Time.unscaledTime);
        }
        else{
-           CheckpointTimes[i++] = Time.unscaledTime - CheckpointTimes[i-1];
+           CheckpointTimes.Add(Time.unscaledTime - CheckpointTimes[i-1]);
        }
+       i++;
     }
  //referenced https://support.unity.com/hc/en-us/articles/115000341143-How-do-I-read-and-write-data-from-a-text-file-
     public void ExportTimeData(){
@@ -40,8 +40,8 @@ public class TimeTracker : MonoBehaviour {
      writer.Close();
         //Re-import the file to update the reference in the editor
      //AssetDatabase.ImportAsset(path); 
-     TextAsset asset = (TextAsset)Resources.Load("CheckpointTimes");
+     //TextAsset asset = (TextAsset)Resources.Load("CheckpointTimes");
         //Print the text from the file
-     Debug.Log(asset.text);
+     //Debug.Log(asset.text);
     }
 }
