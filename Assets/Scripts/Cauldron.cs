@@ -15,7 +15,7 @@ public class Cauldron : MonoBehaviour
     public Door door6;
     public Door door7;
     public Door door8;
-    private TimeTracker titr;
+    private TimeTracker titr = new TimeTracker();
     private int count = 0;
 
     // Start is called before the first frame update
