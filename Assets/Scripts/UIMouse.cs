@@ -5,18 +5,18 @@ using UnityEngine;
 public class UIMouse : MonoBehaviour
 {
     private GameObject surveyCanvas;
-    private GameObject playerCam;
-    private GameObject staticCam;
-    private GameObject player;
+    public GameObject playerCam;
+    public GameObject staticCam;
+    public GameObject player;
 
     public GameObject nextWindow;
 
     void Start()
     {
         surveyCanvas = this.gameObject;
-        playerCam = GameObject.Find("PlayerCam");
+        /*playerCam = GameObject.Find("PlayerCam");
         staticCam = GameObject.Find("StaticCam");
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player");*/
     }
     void Update()
     {

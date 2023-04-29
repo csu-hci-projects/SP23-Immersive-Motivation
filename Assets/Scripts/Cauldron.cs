@@ -18,6 +18,11 @@ public class Cauldron : MonoBehaviour
     private TimeTracker titr = new TimeTracker();
     private int count = 0;
 
+    public GameObject survey;
+    public GameObject playerCam;
+    public GameObject staticCam;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,12 +34,19 @@ public class Cauldron : MonoBehaviour
     void Update()
     {
         if(door8.open()) {
-            if(count < 8){
+            survey.SetActive(true);
+            if (count < 8){
                 count++;
                 titr.ReachedCheckpoint();
                 titr.ExportTimeData();
             }
             // Open Completion UI
+            
+            playerCam.SetActive(false);
+            staticCam.SetActive(true);
+            player.SetActive(false);
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
         }
         else if(door7.open()) {
             fluid.GetComponent<Renderer>().material.color = new Color(1f, 0.6847826f, 0.8804347f, 1f);
