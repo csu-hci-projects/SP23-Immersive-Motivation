@@ -20,10 +20,10 @@ public class Door : MonoBehaviour
     void Update()
     {
         //*
-        print("isOpen = " + isOpen);
+        /*print("isOpen = " + isOpen);
         print("isUnlocked = " + isUnlocked);
         print("Player Distance: " + getPlayerDistance());
-        print("Within proximity: " + (getPlayerDistance() <= minDistance));
+        print("Within proximity: " + (getPlayerDistance() <= minDistance));*/
         
         if(isOpen) {
             anim.SetBool("isOpened", true);
