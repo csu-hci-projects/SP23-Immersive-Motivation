@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/DesktopMain.unity
+- path: Assets/Scenes/VRMain.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
