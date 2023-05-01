@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DesktopOpeningSurvey.unity
     guid: 8af097d43dcc9644383badbd02fc1331
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DesktopMain.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DesktopClosingSurvey.unity
     guid: f28ee0aadb869c0458638e6fd309f20f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VROpeningSurvey.unity
     guid: e16ae4fe92a00334099d14d19d36c4d5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VRMain.unity
     guid: 736759642bcf4c14baf2f63a11311065
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VRClosingSurvey.unity
     guid: 11c9586814274504292a57b6f1ab2e45
   m_configObjects:
