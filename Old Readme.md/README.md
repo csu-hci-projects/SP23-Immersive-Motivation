@@ -1,0 +1,9 @@
+# SP23-Immersive-Motivation
+This study concerns the relationship between the use of Virtual Reality environments and one's confidence and motivation when completing complex tasks. The prototype used for this study consists of several puzzle rooms that participants will need to figure out how to escape, aided either by a VR headset or by a standard computer screen. Participants will self-report their own feelings of confidence in completing these tasks after completing at least two different puzzles.
+This study is written as within-subjects. In order to account for bias, we will split participants into two groups. One group will perform the first puzzle with VR and the second without VR, and the second group will do the same, but with the VR/no VR groups switched.
+## Concepts for Levels
+The first level concept is based off of a riddle I heard as a child. To solve this puzzle, you will have to look into the mirror, where you will find a saw. You will then use the saw to cut the table in half. The two halves will form a hole that you can crawl out of to solve the puzzle. The concept art for the room is below:
+![Puzzle room concept 1](https://user-images.githubusercontent.com/89433391/222517631-c1e1d5cc-4b5d-42f9-be5a-241f8dd93907.jpeg)
+
+The second level concept involves a cylindrical room with doors on every part of the wall. There is a cauldron-like structure in the center. The user would have to look into the cauldron for hints about which doors to enter. Behind each door is a different object/key, which is needed to open the next door. Eventually, the user would be led to a door that exits the room, ending the level. The concept for this room is below:
+![Puzzle Room concept 2](https://user-images.githubusercontent.com/89433391/222522508-dd0cb86e-baad-4490-b70d-ebbe71eeb09f.jpeg)
